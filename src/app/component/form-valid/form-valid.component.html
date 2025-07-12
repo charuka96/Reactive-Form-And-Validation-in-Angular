@@ -48,7 +48,7 @@
               required=""
             />
 
-            @if(userlogForm.controls['password'].errors?.['required']){
+            @if(userlogForm.controls['password'].errors?.['required'] && userlogForm.controls['password'].touched){
             <span class="text-red-600">*required password</span>
             }
           </div>
